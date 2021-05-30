@@ -94,21 +94,29 @@ public class Main {
         int[] arrayOutput = list.stream().mapToInt(i -> i).toArray();
 
         for (int o = 0; o < arrayOutput.length; o++)
-        System.out.print(arrayOutput[o]);
+            System.out.print(arrayOutput[o]);
         return arrayOutput;
 
     }
 
     public static void main(String[] args) {
+        if (validate(args) == true) {
+            try {
 
-        AlgorithmA(args);
-        System.out.println();
-        AlgorithmB(args);
+
+                AlgorithmA(args);
+                System.out.println();
+                AlgorithmB(args);
+            } catch (Exception e) {
+                System.out.println("args are empty !!!");
+
+            }
+        } else System.out.println("wrong args !!!");
 
 
     }
 
-    static void invertArray(int[] array) {
+    public static void invertArray(int[] array) {
         for (int i = 0; i < array.length / 2; i++) {
             int temp = array[i];
             array[i] = array[array.length - 1 - i];
@@ -117,7 +125,7 @@ public class Main {
     }
 
 
-    static Object[] convert(BigInteger bigNumber) {
+    public static Object[] convert(BigInteger bigNumber) {
         char[] digits = bigNumber.toString().toCharArray();
         ArrayList<Integer> list = new ArrayList();
         for (char digit : digits) {
@@ -128,6 +136,20 @@ public class Main {
 
     }
 
+    public static boolean validate(String[] args) {
+        boolean conditionOne = true;
+        boolean conditionTwo = true;
+        try {
+            if (args[0].length() > 20) conditionOne = false;
+            if (args[1].length() > 20) conditionTwo = false;
+        } catch (Exception e) {
+            System.out.println("wrong args !!!");
+        }
+        if ((!conditionOne) || (!conditionTwo)) return false;
+        else return true;
+    }
 
 }
+
+
 
