@@ -1,0 +1,156 @@
+# Created on 2021-05-28T11:19:16.854
+m�j 28, 2021 11:19:16 AM org.junit.platform.launcher.core.DefaultLauncher handleThrowable
+
+# Created on 2021-05-28T11:19:16.870
+WARNING: TestEngine with ID 'junit-jupiter' failed to discover tests
+
+# Created on 2021-05-28T11:19:16.870
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+
+# Created on 2021-05-28T11:19:16.870
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+
+# Created on 2021-05-28T11:19:16.870
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+
+# Created on 2021-05-28T11:19:16.870
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+
+# Created on 2021-05-28T11:19:16.870
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+
+# Created on 2021-05-28T11:19:16.870
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+
+# Created on 2021-05-28T11:19:16.870
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+
+# Created on 2021-05-28T11:19:16.886
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+
+# Created on 2021-05-28T11:19:16.886
+	at java.lang.Class.annotationData(Class.java:3510)
+
+# Created on 2021-05-28T11:19:16.886
+	at java.lang.Class.getDeclaredAnnotation(Class.java:3458)
+
+# Created on 2021-05-28T11:19:16.886
+	at org.junit.platform.commons.util.AnnotationUtils.findAnnotation(AnnotationUtils.java:135)
+
+# Created on 2021-05-28T11:19:16.886
+	at org.junit.platform.commons.util.AnnotationUtils.findAnnotation(AnnotationUtils.java:114)
+
+# Created on 2021-05-28T11:19:16.886
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.determineDisplayName(JupiterTestDescriptor.java:86)
+
+# Created on 2021-05-28T11:19:16.886
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.<init>(ClassTestDescriptor.java:83)
+
+# Created on 2021-05-28T11:19:16.886
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.<init>(ClassTestDescriptor.java:77)
+
+# Created on 2021-05-28T11:19:16.886
+	at org.junit.jupiter.engine.discovery.TestContainerResolver.resolveClass(TestContainerResolver.java:100)
+
+# Created on 2021-05-28T11:19:16.901
+	at org.junit.jupiter.engine.discovery.TestContainerResolver.resolveElement(TestContainerResolver.java:45)
+
+# Created on 2021-05-28T11:19:16.901
+	at org.junit.jupiter.engine.discovery.JavaElementsResolver.tryToResolveWithResolver(JavaElementsResolver.java:208)
+
+# Created on 2021-05-28T11:19:16.901
+	at org.junit.jupiter.engine.discovery.JavaElementsResolver.lambda$resolve$9(JavaElementsResolver.java:195)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+# Created on 2021-05-28T11:19:16.901
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+
+# Created on 2021-05-28T11:19:16.917
+	at org.junit.jupiter.engine.discovery.JavaElementsResolver.resolve(JavaElementsResolver.java:198)
+
+# Created on 2021-05-28T11:19:16.917
+	at org.junit.jupiter.engine.discovery.JavaElementsResolver.lambda$resolveForAllParents$5(JavaElementsResolver.java:164)
+
+# Created on 2021-05-28T11:19:16.917
+	at java.util.Collections$SingletonSet.forEach(Collections.java:4769)
+
+# Created on 2021-05-28T11:19:16.917
+	at org.junit.jupiter.engine.discovery.JavaElementsResolver.resolveForAllParents(JavaElementsResolver.java:164)
+
+# Created on 2021-05-28T11:19:16.917
+	at org.junit.jupiter.engine.discovery.JavaElementsResolver.resolveContainerWithParents(JavaElementsResolver.java:85)
+
+# Created on 2021-05-28T11:19:16.917
+	at org.junit.jupiter.engine.discovery.JavaElementsResolver.resolveClass(JavaElementsResolver.java:60)
+
+# Created on 2021-05-28T11:19:16.917
+	at org.junit.jupiter.engine.discovery.DiscoverySelectorResolver.lambda$resolve$3(DiscoverySelectorResolver.java:69)
+
+# Created on 2021-05-28T11:19:16.917
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+
+# Created on 2021-05-28T11:19:16.917
+	at org.junit.jupiter.engine.discovery.DiscoverySelectorResolver.resolve(DiscoverySelectorResolver.java:68)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.jupiter.engine.discovery.DiscoverySelectorResolver.resolveSelectors(DiscoverySelectorResolver.java:50)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.jupiter.engine.JupiterTestEngine.discover(JupiterTestEngine.java:61)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.platform.launcher.core.DefaultLauncher.discoverEngineRoot(DefaultLauncher.java:130)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.platform.launcher.core.DefaultLauncher.discoverRoot(DefaultLauncher.java:117)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.platform.launcher.core.DefaultLauncher.discover(DefaultLauncher.java:82)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.platform.surefire.provider.TestPlanScannerFilter.accept(TestPlanScannerFilter.java:50)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.apache.maven.surefire.util.DefaultScanResult.applyFilter(DefaultScanResult.java:102)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.scanClasspath(JUnitPlatformProvider.java:121)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+
+# Created on 2021-05-28T11:19:16.932
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+
+# Created on 2021-05-28T11:19:16.948
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+
+# Created on 2021-05-28T11:19:16.948
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+
+# Created on 2021-05-28T11:19:16.948
+
+

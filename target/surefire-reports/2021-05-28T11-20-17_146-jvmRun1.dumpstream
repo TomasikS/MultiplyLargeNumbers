@@ -1,0 +1,79 @@
+# Created on 2021-05-28T11:20:22.359
+ForkStarter IOException: 689 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+689 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+689 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd-jupiter/1.3.23/zerocode-tdd-jupiter-1.3.23.jar!/logback.xml]
+689 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+689 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd-jupiter/1.3.23/zerocode-tdd-jupiter-1.3.23.jar!/logback.xml]
+689 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd/1.3.23/zerocode-tdd-1.3.23.jar!/logback.xml]
+736 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@1d7acb34 - URL [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd-jupiter/1.3.23/zerocode-tdd-jupiter-1.3.23.jar!/logback.xml] is not of type file
+844 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+875 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+892 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [fileAppender]
+939 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+055 |-INFO in ch.qos.logback.core.FileAppender[fileAppender] - File property is set to [target/logs/your_app_tests_logs.log]
+055 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+055 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [consoleAppender]
+086 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+086 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+086 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+086 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+086 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [fileAppender] to Logger[ROOT]
+086 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [consoleAppender] to Logger[ROOT]
+086 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+086 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@48a242ce - Registering current configuration as safe fallback point.
+org.apache.maven.plugin.surefire.booterclient.output.MultipleFailureException: 689 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+689 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+689 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd-jupiter/1.3.23/zerocode-tdd-jupiter-1.3.23.jar!/logback.xml]
+689 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+689 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd-jupiter/1.3.23/zerocode-tdd-jupiter-1.3.23.jar!/logback.xml]
+689 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd/1.3.23/zerocode-tdd-1.3.23.jar!/logback.xml]
+736 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@1d7acb34 - URL [jar:file:/C:/Users/HP/.m2/repository/org/jsmart/zerocode-tdd-jupiter/1.3.23/zerocode-tdd-jupiter-1.3.23.jar!/logback.xml] is not of type file
+844 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+875 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+892 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [fileAppender]
+939 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+055 |-INFO in ch.qos.logback.core.FileAppender[fileAppender] - File property is set to [target/logs/your_app_tests_logs.log]
+055 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+055 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [consoleAppender]
+086 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+086 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+086 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+086 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+086 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [fileAppender] to Logger[ROOT]
+086 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [consoleAppender] to Logger[ROOT]
+086 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+086 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@48a242ce - Registering current configuration as safe fallback point
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.<init>(ThreadedStreamConsumer.java:58)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer.<init>(ThreadedStreamConsumer.java:110)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:596)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:533)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:278)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:244)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1149)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:978)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+
+
